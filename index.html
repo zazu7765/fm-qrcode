@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://cdn.tailwindcss.com"></script>
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    .bg{
+      background-color:rgb(215	225	238	);
+      font-family: 'Outfit', sans-serif;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="bg flex flex-col items-center justify-center h-screen">
+  <div class="max-w-xs p-4 mb-4 bg-white shadow rounded-lg">
+    <img src="./images/image-qr-code.png" alt="QR code" class="w-full max-w-xs max-h-80 rounded-lg mb-4 "/>
+  <p class="text-2xl font-bold text-center w-full mb-3">Improve your front-end skills by building projects</p>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
+  <p class="font-normal text-gray-500 text-center">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Daniel Ibanescu</a>.
   </div>
 </body>
 </html>
